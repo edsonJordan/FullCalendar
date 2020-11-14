@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href='css/bootstrap.min.css' rel='stylesheet' />
+    <link href='css/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css">
+    <script src='js/main.min.js'></script>  
+    <script src='js/locales-all.min.js'></script>  
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',            
+          headerToolbar: { 
+            left: 'today,prev,next'  
+            ,center: 'title'
+            ,right: 'timeGridDay,timeGridWeek,dayGridMonth' },
+            dateClick:function(info){
+                console.log('click en  ' + info.view.type);                
+                /* info.dayEl.style.background = "red"; */
+            },
+            editable: true,
+            droppable: true,
+            eventSources:[{
+                events:[
+                    {title:'evento numero 1',
+                    start:'2020-11-14'
+                    },
+                    {title:'evento numero 2',
+                    start:'2020-11-17',
+                    end:'2020-11-18'
+                    },                    
+                    {title:'evento numero 3',
+                    start:'2020-11-11',
+                    end:'2020-11-18'
+                    }                                    
+                ],
+                color: "#55C51E"            
+            }]            
+        });
+        calendar.setOption('locale','es');
+        calendar.render();
+
+        
+      });
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">                
+            </div>
+            <div class="col-3"><div id='calendar'></div></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    
+    
+  </body>
+  
+</html>

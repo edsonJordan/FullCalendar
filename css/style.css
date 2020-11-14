@@ -1,0 +1,119 @@
+body{
+ /*    background-color: #F8F9FA; */
+}
+table{
+  border:1px solid  red;  
+}
+.fc-theme-standard td, .fc-theme-standard th, .fc-theme-standard .fc-scrollgrid {
+    border:1px solid #DDE4F6;
+}
+.fc-scrollgrid-section-header a{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #2F2F2F;
+}
+.fc .fc-scroller-harness{
+    background-color: white;
+}
+.fc-theme-standard .fc-scrollgrid{
+    
+}
+/* today button */
+.fc .fc-button-primary:disabled{
+    border: none;
+    color: white;
+    border: 2px solid white;
+    background-color: #0224B2;
+}
+.fc .fc-daygrid-day-frame {
+    /* border-radius: .8rem; */
+    border: 1.5rem solid white;    
+}
+.fc-theme-standard td{    
+    background-color: white;    
+ /*    background-color: white;
+         */ 
+   }   
+   .fc .fc-daygrid-day-top{
+    border-top-left-radius: 5px;
+    background: #DDE4F6;
+    border-top-right-radius: 5px;
+    min-height: 4rem;
+    max-width: 10.1rem;
+    margin: auto;
+    /* display: flex; */
+}
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    border-bottom-left-radius: 5px;
+    background: #DDE4F6;
+    border-bottom-right-radius: 5px;
+    min-height: 4rem;
+    max-width: 10.1rem;
+}
+.fc .fc-daygrid-day-events{    
+    margin: auto;
+    /* display: flex; */
+}
+/* Header calendary */
+   .fc .fc-toolbar.fc-header-toolbar{
+       background-color: white;
+       padding-top: 1.5rem;
+       margin-top: 2rem;
+       
+       height:12rem;
+       /* border: 2px solid #0224B2; */
+       border-top-right-radius: 15px;
+       border-top-left-radius: 15px;       
+        background-color: #0224B2;
+   }
+a{
+    color: #0224B2;
+    font-weight: 800;
+}
+.fc .fc-daygrid-day-top { 
+    justify-content: center;
+}
+/* Button primary header */
+.fc .fc-button-primary{
+    background-color: #0224B2;
+    color: rgba(255, 255, 255, .3);
+    border: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    margin: 25px;
+}
+/* title today  */
+.fc-toolbar-title{
+    color: white;
+}
+.fc .fc-scroller {
+    overflow: hidden;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active{
+    border: 2px solid white;
+    background-color: #0224B2;
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-top{
+    background-color: #EA8261 ;
+    
+}
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-top a{
+    color: white;
+}
+
+.fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-events {        
+    background-color: #EA8261 ;
+}
+.fc .fc-daygrid-day.fc-day-today{
+    background-color: transparent;
+}
+
+.fc .fc-day-other .fc-daygrid-day-events {
+    opacity: .3;
+    background-color: #DDE4F6;
+}
+/* TODAY BUTTON ACTIVE */
+.fc .fc-button-primary:hover{
+    border: 2px solid white;
+    background-color: #0224B2;
+}
